@@ -1,7 +1,8 @@
 let toLink = document.getElementById("linkTo");
 
-toLink.addEventListener("click", () => {
+toLink.addEventListener("click", (e) => {
+  e.preventDefault()
   chrome.tabs.create({
-    url: `https://www.mohfw.gov.in/`,
+    url: `https://covid19dashboard.mohfw.gov.in/`,
   });
 });

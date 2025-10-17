@@ -14,9 +14,9 @@
             "css": ["styles.css"]
         }
     ],
-    "browser_action": {
-        "default_title": "see more",
+    "action": {
+        "default_title": "Current status in India",
         "default_popup": "popup.html"
     },
-    "permissions": ["tabs"]
+    "permissions": ["tabs", "activeTab"]
 }
